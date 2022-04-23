@@ -54,26 +54,6 @@ class Standings:
 
         return sum
 
-
-# def filling(standings, i, j, tables=[]):
-#     if i == 5:
-#         tables.append(standings.table)
-#         return
-#
-#
-#
-#     for value in (0, 1, 3):
-#         if i != j and standings.table[i][j] is None:
-#             standings.put_result(i, j, value)
-#         if j + 1 < len(standings.table):
-#             filling(standings, i, j + 1, tables)
-#         elif j + 1 == len(standings.table) and standings.score(standings.table[i]) == 6:
-#             filling(standings, i + 1, 0, tables)
-#         else:
-#             standings.table[i] = [None for n in range(6)]
-#             j = 0
-
-
 def array_copy(arr):
     result = []
     for i in range(len(arr)):
